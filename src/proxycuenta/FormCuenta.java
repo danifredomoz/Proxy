@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package proxycuenta;
 
 /**
@@ -15,6 +11,8 @@ public class FormCuenta extends javax.swing.JFrame {
      * Creates new form FormCuenta
      */
     private CuentaProxy context;
+    private Cuenta cuenta;
+
     public FormCuenta() {
         initComponents();
         context = new CuentaProxy();
@@ -131,7 +129,7 @@ public class FormCuenta extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        depositar(new Sumar());
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

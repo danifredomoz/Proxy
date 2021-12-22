@@ -7,18 +7,20 @@ package proxycuenta;
 
 /**
  *
- * @author Doris
+ * @author Daniel
  */
 public class Cuenta {
     
     private int idCuenta;
     private String usuario;
     private double saldoInicial;
+    private Cuenta cuenta;
     
     public Cuenta(int idCuenta,String usuario,double saldoInicial){
         this.idCuenta=idCuenta;
         this.usuario=usuario;
         this.saldoInicial=saldoInicial;
+        this.cuenta = new Cuenta();
     }
     
     public int getIdCuenta(){
