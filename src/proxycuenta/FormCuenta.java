@@ -16,6 +16,7 @@ public class FormCuenta extends javax.swing.JFrame {
     public FormCuenta() {
         initComponents();
         context = new CuentaProxy();
+        cuenta =  new Cuenta(1,'23',1000);
     }
 
     private void depositar(Cuenta cuenta,double monto) {
